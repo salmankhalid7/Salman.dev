@@ -1,0 +1,178 @@
+/* Reset default margins and ensure box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About section styling */
+.About {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* About image styling */
+.About-img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin-top: 4.2rem;
+}
+
+.About-img img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.About-img img:hover {
+    transform: translateY(-1.2rem);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* About intro styling */
+.About-intro {
+  flex: 1 1 400px;
+  max-width: 600px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+}
+
+.About-intro h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4f5257;
+  margin-bottom: 0;
+  text-align: left; /* Align heading to the left */
+  margin-left: 0; /* Remove previous negative margin */
+  margin-top: 0; /* Adjust top margin */
+}
+
+.About-intro strong {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0;
+  text-align: left; /* Align text to the left */
+}
+
+#about-heading {
+  color: #292828;
+}
+
+.type-animations {
+  color: #0587f1;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.About-icon {
+  display: inline-block;
+  margin-right: 0.5rem; /* Space between icon and text */
+  order: -1; /* Move icon to the start */
+}
+
+#react-icon {
+  font-size: 1.8rem;
+  color: #61dafb;
+  vertical-align: middle;
+  animation: spin 4s linear infinite; /* Reintroduce animation */
+}
+
+/* Typewriter cursor styling */
+span[aria-live="polite"] {
+  display: flex;
+  align-items: center;
+}
+
+span[aria-live="polite"] span {
+  display: inline-block;
+}
+
+/* Paragraph styling */
+.About-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: justify;
+  margin-top: 0;
+}
+
+/* Animation for React icon */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .About-img {
+    max-width: 100%;
+  }
+
+  .About-intro {
+    align-items: center; /* Center content for smaller screens */
+  }
+
+  .About-intro h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .About-intro strong {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .About-intro p {
+    font-size: 1rem;
+    text-align: center;
+  }
+     .type-animations{
+    font-size: 1.6rem;
+   } 
+}
+
+@media (max-width: 480px) {
+
+   .type-animations{
+    font-size: 1.6rem;
+   } 
+
+  .About-img img {
+    border-radius: 8px;
+    width: 80%;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 2.3rem;
+  }
+
+  .About-intro h3 {
+    font-size: 1.8rem;
+  }
+
+  .About-intro strong {
+    font-size: 1.2rem;
+  }
+}

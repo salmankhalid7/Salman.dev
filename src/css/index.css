@@ -1,0 +1,22 @@
+:root {
+  --x: 50vw;
+  --y: 50vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradient-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(
+    200px circle at var(--x) var(--y),
+    rgba(0, 0, 0, 0.15),
+    transparent 80%
+  );
+  transition: background 0.1s ease;
+}

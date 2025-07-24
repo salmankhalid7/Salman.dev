@@ -1,0 +1,49 @@
+.footer {
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  place-content: center;
+  gap: 1rem;
+  height: 0.8rem;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a[aria-label='GitHub'] {
+  color: #333;
+}
+
+.social-icons a[aria-label='GitHub']:hover {
+  color: #000; 
+  transform: scale(1.2);
+}
+
+
+.social-icons a[aria-label='LinkedIn'] {
+  color: #0a66c2; 
+}
+
+.social-icons a[aria-label='LinkedIn']:hover {
+  color: #004182; 
+  transform: scale(1.2);
+}
